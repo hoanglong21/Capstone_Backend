@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------
+Test set: com.capstone.project.controller.UserControllerTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 2.803 s <<< FAILURE! - in com.capstone.project.controller.UserControllerTest
+testUpdateUser{String, String, String, String, String, String, String, String, String, String, String, String, String}[1]  Time elapsed: 0.185 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.capstone.project.controller.UserControllerTest.testUpdateUser(UserControllerTest.java:152)
+
+testUpdateUser{String, String, String, String, String, String, String, String, String, String, String, String, String}[2]  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.capstone.project.controller.UserControllerTest.testUpdateUser(UserControllerTest.java:152)
+
+testBanUser{String, boolean}[1]  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testBanUser(UserControllerTest.java:207)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
+testBanUser{String, boolean}[2]  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testBanUser(UserControllerTest.java:207)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
+testDeleteUser{String, boolean}[1]  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testDeleteUser(UserControllerTest.java:221)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
+testDeleteUser{String, boolean}[2]  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testDeleteUser(UserControllerTest.java:221)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
+testRecoverUser{String, boolean}[1]  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testRecoverUser(UserControllerTest.java:236)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
+testRecoverUser{String, boolean}[2]  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testRecoverUser(UserControllerTest.java:236)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
+testRecoverUser{String, boolean}[3]  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.success"
+	at com.capstone.project.controller.UserControllerTest.testRecoverUser(UserControllerTest.java:236)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['success'] in path $ but found 'java.lang.Boolean'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+
